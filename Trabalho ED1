@@ -65,13 +65,13 @@ void inserir(){
 	Mode *novop;
 	Mode *novoc;
 	
-	printf("insira a fila \n1-Preferencial \n2-Comum\n");
+	printf("insira a fila \n1-Presencial \n2-Comum\n");
 	scanf("%i",&filains);
 	
 	if(filains ==1){
 		novop = (Mode*)malloc(sizeof(Mode));
 	
-				printf("\nDigite o nome:");
+		printf("\nDigite o nome:");
 		scanf("%s",&novop->nome);
 	
 		printf("\nDigite o ID:");
@@ -187,7 +187,7 @@ void imprimirLista(){
 	if(inicioListap != NULL){
 		auxInserir = inicioListap;
 		while (auxInserir != NULL){
-			printf("\n PID: %d | processo: %s\n", auxInserir ->pid, auxInserir ->nome);
+			printf("\n PID: %d | processo %s\n", auxInserir ->pid, auxInserir ->nome);
 			auxInserir = auxInserir ->prox;
 		}
 		
@@ -198,7 +198,7 @@ void imprimirLista(){
 		if(inicioListac != NULL){
 			auxInserir = inicioListac;
 			while (auxInserir != NULL){
-				printf("\n PID: %d | processo: %s\n", auxInserir ->pid, auxInserir ->nome);
+				printf("\n PID: %d | processo %s\n", auxInserir ->pid, auxInserir ->nome);
 				auxInserir = auxInserir ->prox;
 		}
 		
@@ -207,12 +207,12 @@ void imprimirLista(){
 	
 }
  void Menu(){
- 	printf("\n ***Menu de gerenciamento***");
- 	printf("\n1-Inserir");
- 	printf("\n2-Executar");
- 	printf("\n3-Imprimir Fila");
- 	printf("\n4-Sair");
- 	printf("\nEscolha:");
+ 	printf("\t ***Menu de gerenciamento***\n");
+ 	printf("\t1-Inserir\n");
+ 	printf("\t2-Executar\n");
+ 	printf("\t3-Imprimir Fila\n");
+ 	printf("\t4-Sair\n\n");
+ 	printf("Escolha:");
  	
  	
  }
