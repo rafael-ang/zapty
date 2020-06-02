@@ -65,7 +65,7 @@ void inserir(){
 	Mode *novop;
 	Mode *novoc;
 	
-	printf("insira a fila \n1-Presencial \n2-Comum\n");
+	printf("insira a fila \n1-Preferencial \n2-Comum\n");
 	scanf("%i",&filains);
 	
 	if(filains ==1){
